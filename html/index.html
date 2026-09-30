@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>ONG Amigo Caramelo - Resgatando e Reabilitando Cães Abandonados</title>
+
+    <meta name="description" content="ONG de resgate e adoção de cachorros">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <h1>ONG Amigo Caramelo</h1>
+
+        <p>Resgatando e Reabilitando Cães Abandonados</p>
+
+    </header>
+
+
+    <!-- MENU -->
+    <nav class="menu">
+
+        <button
+            class="menu-hamburguer"
+            id="botao-menu"
+            type="button">
+            ☰
+        </button>
+
+
+       <ul id="menu-lista">
+
+    <li>
+        <a href="#inicio">Início</a>
+    </li>
+
+    <li>
+        <a href="#sobre">Sobre nós</a>
+    </li>
+
+    <li>
+        <a href="#contato">Contato</a>
+    </li>
+
+    <li>
+        <a href="#doacao">Doação</a>
+    </li>
+
+    <li>
+        <a href="#cachorros">Cachorros</a>
+    </li>
+
+    <li>
+        <a href="#adocao">Adoção</a>
+    </li>
+
+</ul>
+
+    </nav>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio">
+
+            <h2>Bem-vindo à ONG Amigo Caramelo</h2>
+
+            <p>
+                Nosso objetivo é
+                <strong>resgatar, reabilitar e encontrar lares amorosos</strong>
+                para cães abandonados.
+            </p>
+
+            <img
+                src="../imagens/caramelo7.png"
+                alt="Cachorro Caramelo"
+                width="600"
+                height="400"
+            >
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section id="sobre">
+
+            <h2>Sobre nós</h2>
+
+            <p>
+                A ONG Amigo Caramelo nasceu do sonho de erradicar o abandono
+                animal em nossa cidade. Resgatamos cães em situação de risco,
+                cuidamos da saúde física e emocional deles, e buscamos famílias
+                responsáveis que possam lhes dar uma segunda chance de ser felizes.
+            </p>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section id="contato">
+
+            <h2>Contato</h2>
+
+            <p>
+                Entre em contato conosco para saber mais sobre como ajudar
+                ou adotar um cãozinho:
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>E-mail:</strong>
+                    contato@amigocaramelo.org
+                </li>
+
+                <li>
+                    <strong>Telefone / WhatsApp:</strong>
+                    (47) 99999-9999
+                </li>
+
+                <li>
+                    <strong>Endereço:</strong>
+                    Rua dos Vira-Latas, 123 - Santa Catarina / SC
+                </li>
+
+                <li>
+                    <strong>Instagram:</strong>
+                    @ongamigocaramelo
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FEEDBACK -->
+        <section id="feedback">
+
+            <h2>Informações</h2>
+
+            <p>
+                Cachorrinho disponível para adoção:
+                <span class="badge">Disponível</span>
+            </p>
+
+            <div class="alerta">
+
+                <strong>Atenção!</strong>
+
+                Confira seus dados antes de enviar o formulário.
+
+            </div>
+
+            <button
+                type="button"
+                id="botao-toast">
+                Mostrar mensagem
+            </button>
+
+        </section>
+
+
+        <!-- TOAST -->
+        <div id="toast" role="status" aria-live="polite">
+            Pedido de adoção enviado com sucesso! 🐶
+        </div>
+
+
+        <!-- DOAÇÃO -->
+        <section id="doacao">
+
+            <h2>Doação</h2>
+
+            <p>
+                Ajude-nos a continuar nosso trabalho com uma doação.
+                Cada contribuição faz a diferença na vida de um
+                cachorrinho abandonado.
+            </p>
+
+            <p>
+                <strong>Chave PIX:</strong>
+                pix@amigocaramelo.org
+            </p>
+
+        </section>
+
+
+        <!-- CACHORROS -->
+        <section id="cachorros">
+
+            <h2>Cachorros para Adoção</h2>
+
+            <div id="lista-cachorros"></div>
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+        <section id="adocao">
+
+            <h2>Formulário de Interesse em Adoção</h2>
+
+            <p>
+                Preencha os dados abaixo para darmos início ao processo de adoção:
+            </p>
+
+
+            <form
+                id="form-adocao"
+                action="#"
+                method="POST">
+
+
+                <fieldset>
+
+                    <legend>Dados do Adotante</legend>
+
+
+                    <p>
+
+                        <label for="nome">
+                            Nome Completo:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                            placeholder="Digite seu nome completo"
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="email">
+                            E-mail:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="seuemail@exemplo.com"
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="telefone">
+                            Telefone / WhatsApp:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            required
+                            placeholder="(47) 99999-9999"
+                        >
+
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Perfil de Moradia e Experiência</legend>
+
+
+                    <p>
+
+                        <label for="moradia">
+                            Tipo de Moradia:
+                        </label>
+
+                        <br>
+
+                        <select
+                            id="moradia"
+                            name="moradia">
+
+                            <option value="casa">
+                                Casa com quintal
+                            </option>
+
+                            <option value="apartamento">
+                                Apartamento
+                            </option>
+
+                            <option value="chacara">
+                                Chácara / Sítio
+                            </option>
+
+                        </select>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="sim">
+                            Já teve ou tem outros animais?
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="radio"
+                            id="sim"
+                            name="experiencia"
+                            value="sim"
+                        >
+
+                        <label for="sim">
+                            Sim
+                        </label>
+
+
+                        <input
+                            type="radio"
+                            id="nao"
+                            name="experiencia"
+                            value="nao"
+                        >
+
+                        <label for="nao">
+                            Não
+                        </label>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="motivo">
+                            Por que você quer adotar um cãozinho?
+                        </label>
+
+                        <br>
+
+                        <textarea
+                            id="motivo"
+                            name="motivo"
+                            rows="4"
+                            cols="50"
+                            placeholder="Conte um pouco sobre sua rotina e por que deseja adotar..."
+                        ></textarea>
+
+                    </p>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <button type="submit">
+                    Enviar Pedido de Adoção
+                </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+          <footer>
+        <p>
+            © 2026 ONG Amigo Caramelo.
+        </p>
+    </footer>
+
+
+    <script type="module">
+
+        import { abrirMenu } from "../js/menu.js";
+        import { mostrarToast } from "../js/toast.js";
+        import { carregarCachorros } from "../js/cachorros.js";
+        import { router } from "../js/router.js";
+        import { validarFormulario } from "../js/validacao.js";
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var botaoMenu = document.getElementById("botao-menu");
+
+            var botaoToast = document.getElementById("botao-toast");
+
+            var formulario = document.getElementById("form-adocao");
+
+
+            botaoMenu.addEventListener("click", abrirMenu);
+
+            botaoToast.addEventListener("click", mostrarToast);
+
+            formulario.addEventListener("submit", validarFormulario);
+
+
+            carregarCachorros();
+
+            router();
+
+        });
+
+
+        window.addEventListener("hashchange", router);
+
+    </script>
+
+</body>
+</html>
